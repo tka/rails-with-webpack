@@ -13,3 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require_self
+
+$(function(){
+    $('#hello-assets-pipeline').text('Hello Assets Pipeline! from app/assets/javascripts/application.js ')
+})

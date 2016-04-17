@@ -1,0 +1,4 @@
+default:
+  webpack_assets_host: "http://127.0.0.1:8080"
+production:
+  webpack_assets_host: ""

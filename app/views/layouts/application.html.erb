@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>RailsWithWebpack</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <head>
+        <title>RailsWithWebpack</title>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
 
-<%= yield %>
+        <%= yield %>
 
-</body>
+        <%= webpack_javascript_include_tag 'app'%>
+    </body>
 </html>
